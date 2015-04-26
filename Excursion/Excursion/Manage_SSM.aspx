@@ -1,6 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Excursion.Manage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manage_SSM.aspx.cs" Inherits="Excursion.Manage_SSM" %>
 
-<%@ Register Src="~/controls/UserManage.ascx" TagPrefix="uc1" TagName="UserManage" %>
+<%@ Register Src="~/controls/SightSpotManage.ascx" TagPrefix="uc1" TagName="SightSpotManage" %>
+
 
 
 <!DOCTYPE html>
@@ -31,7 +32,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c" >
-                <asp:Button ID="btnUser" runat="server"  Text="用户信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None"  />
+                <asp:Button ID="btnUser" runat="server"  Text="用户信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnUser_Click"  />
             </div>
 		</div>
 	  </div>
@@ -40,7 +41,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c">
-                <asp:Button ID="btnSightSpotManage" runat="server" Text="景点信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnSightSpotManage_Click" />
+                <asp:Button ID="btnSightSpotManage" runat="server" Text="景点信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" />
             </div>
 		</div>
 		
@@ -87,7 +88,7 @@
 	<div class="center" id="Mobile" onclick="show_menuC()"></div>
 	<div class="right" id="li010">
 		<div class="right01">
-            <uc1:UserManage runat="server" ID="UserManage" />
+            <uc1:SightSpotManage runat="server" ID="SightSpotManage" />
         </div>
 	</div>
 </div>

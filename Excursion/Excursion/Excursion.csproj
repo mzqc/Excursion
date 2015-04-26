@@ -98,6 +98,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Manage_CM.aspx" />
+    <Content Include="Manage_SSM.aspx" />
+    <Content Include="Manage_SNM.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controls\CommunityManage.ascx.cs">
@@ -164,6 +166,20 @@
     </Compile>
     <Compile Include="Manage_CM.aspx.designer.cs">
       <DependentUpon>Manage_CM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_SSM.aspx.cs">
+      <DependentUpon>Manage_SSM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_SSM.aspx.designer.cs">
+      <DependentUpon>Manage_SSM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_SNM.aspx.cs">
+      <DependentUpon>Manage_SNM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_SNM.aspx.designer.cs">
+      <DependentUpon>Manage_SNM.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

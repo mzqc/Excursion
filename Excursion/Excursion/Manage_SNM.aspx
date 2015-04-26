@@ -1,6 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="Excursion.Manage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manage_SNM.aspx.cs" Inherits="Excursion.Manage_SNM" %>
 
-<%@ Register Src="~/controls/UserManage.ascx" TagPrefix="uc1" TagName="UserManage" %>
+<%@ Register Src="~/controls/StageNameManage.ascx" TagPrefix="uc1" TagName="StageNameManage" %>
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -31,7 +35,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c" >
-                <asp:Button ID="btnUser" runat="server"  Text="用户信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None"  />
+                <asp:Button ID="btnUser" runat="server"  Text="用户信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnUser_Click"  />
             </div>
 		</div>
 	  </div>
@@ -40,7 +44,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c">
-                <asp:Button ID="btnSightSpotManage" runat="server" Text="景点信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnSightSpotManage_Click" />
+                <asp:Button ID="btnSightSpotManage" runat="server" Text="景点信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" />
             </div>
 		</div>
 		
@@ -59,7 +63,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c">
-                <asp:Button ID="btnStageNameManage" runat="server" Text="花名库管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnStageNameManage_Click" />
+                <asp:Button ID="btnStageNameManage" runat="server" Text="花名库管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None"  />
             </div>
 		</div>
 	</div>
@@ -68,7 +72,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c">
-                <asp:Button ID="btnSysManage" runat="server" Text="后台系统管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" />
+                <asp:Button ID="btnSysManage" runat="server" Text="后台系统管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnSightSpotManage_Click" />
             </div>
 		</div>
 		<div class="left02down">
@@ -87,7 +91,7 @@
 	<div class="center" id="Mobile" onclick="show_menuC()"></div>
 	<div class="right" id="li010">
 		<div class="right01">
-            <uc1:UserManage runat="server" ID="UserManage" />
+            <uc1:StageNameManage runat="server" ID="StageNameManage" />
         </div>
 	</div>
 </div>

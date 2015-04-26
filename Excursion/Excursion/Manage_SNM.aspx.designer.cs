@@ -10,7 +10,7 @@
 namespace Excursion {
     
     
-    public partial class Manage_CM {
+    public partial class Manage_SNM {
         
         /// <summary>
         /// form1 控件。
@@ -67,12 +67,12 @@ namespace Excursion {
         protected global::System.Web.UI.WebControls.Button btnSysManage;
         
         /// <summary>
-        /// CommunityManage 控件。
+        /// StageNameManage 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::Excursion.controls.CommunityManage1 CommunityManage;
+        protected global::Excursion.controls.StageNameManage1 StageNameManage;
     }
 }

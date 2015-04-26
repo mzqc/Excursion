@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Manage_CM.aspx.cs" Inherits="Excursion.Manage_CM" %>
 
-<%@ Register Src="~/controls/UserManage.ascx" TagPrefix="uc1" TagName="UserManage" %>
+
+<%@ Register Src="~/controls/CommunityManage.ascx" TagPrefix="uc1" TagName="CommunityManage" %>
+
 
 
 <!DOCTYPE html>
@@ -31,7 +33,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c" >
-                <asp:Button ID="btnUser" runat="server"  Text="用户信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None"  />
+                <asp:Button ID="btnUser" runat="server"  Text="用户信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnUser_Click"  />
             </div>
 		</div>
 	  </div>
@@ -40,7 +42,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c">
-                <asp:Button ID="btnSightSpotManage" runat="server" Text="景点信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" />
+                <asp:Button ID="btnSightSpotManage" runat="server" Text="景点信息管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnSightSpotManage_Click" />
             </div>
 		</div>
 		
@@ -59,7 +61,7 @@
 			<div class="left02top_right"></div>
 			<div class="left02top_left"></div>
 			<div class="left02top_c">
-                <asp:Button ID="btnStageNameManage" runat="server" Text="花名库管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" />
+                <asp:Button ID="btnStageNameManage" runat="server" Text="花名库管理" Width="118px" BackColor="White" BorderColor="White" BorderStyle="None" OnClick="btnStageNameManage_Click" />
             </div>
 		</div>
 	</div>
@@ -87,7 +89,7 @@
 	<div class="center" id="Mobile" onclick="show_menuC()"></div>
 	<div class="right" id="li010">
 		<div class="right01">
-            <uc1:UserManage runat="server" ID="UserManage" />
+            <uc1:CommunityManage runat="server" ID="CommunityManage" />
         </div>
 	</div>
 </div>

@@ -9,24 +9,22 @@ using System.Data;
 
 namespace Excursion
 {
-    public partial class Manage : System.Web.UI.Page
+    public partial class Manage_SSM : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
 
-       
-
-        ////protected void btnUser_Click(object sender, EventArgs e)
-        ////{
-        ////    Response.Redirect("Manage.aspx");
-        ////}
-
-        protected void btnSightSpotManage_Click(object sender, EventArgs e)
+        protected void btnUser_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Manage_SSM.aspx");
+            Response.Redirect("Manage.aspx");
         }
+
+        ////protected void btnSightSpotManage_Click(object sender, EventArgs e)
+        ////{
+        ////    Response.Redirect("Manage_SSM.aspx");
+        ////}
 
         protected void btnCommunityManage_Click(object sender, EventArgs e)
         {
@@ -37,8 +35,6 @@ namespace Excursion
         {
             Response.Redirect("Manage_SNM.aspx");
         }
-
- 
 
     }
 }

@@ -21,20 +21,20 @@ namespace Excursion
             Response.Redirect("Manage.aspx");
         }
 
-        ////protected void btnSightSpotManage_Click(object sender, EventArgs e)
-        ////{
-        ////    Response.Redirect("Manage_SSM.aspx");
-        ////}
-
-        protected void btncommunitymanage_click(object sender, EventArgs e)
+        protected void btnSightSpotManage_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Manage_CM.aspx");
+            Response.Redirect("Manage_SSM.aspx");
         }
 
-        ////protected void btnStageNameManage_Click(object sender, EventArgs e)
-        ////{
-        ////    Response.Redirect("Manage_SNM.aspx");
-        ////}
+        //protected void btncommunitymanage_click(object sender, EventArgs e)
+        //{
+        //    Response.Redirect("Manage_CM.aspx");
+        //}
+
+        protected void btnStageNameManage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Manage_SNM.aspx");
+        }
  
 
     }
